@@ -25,11 +25,11 @@
 </main>
 <footer><div class="wrap foot"><span>© <span id="year"></span> Digital Media Studio. Alle Rechte vorbehalten.</span><span><a href="impressum.html">Impressum</a>　<a href="datenschutz.html">Datenschutz</a></span></div></footer>
 <script>
-const CONTACT_EMAIL="DEINE-EMAIL@BEISPIEL.DE";
+const CONTACT_EMAIL=nilsromer48@gmail.com;
 const menu=document.getElementById("menu"),links=document.getElementById("links");
 menu.addEventListener("click",()=>links.classList.toggle("open"));
 links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>links.classList.remove("open")));
 document.getElementById("year").textContent=new Date().getFullYear();
-document.getElementById("contactForm").addEventListener("submit",e=>{e.preventDefault();if(CONTACT_EMAIL==="DEINE-EMAIL@BEISPIEL.DE"){document.getElementById("status").textContent="Bitte zuerst deine echte Kontakt-E-Mail-Adresse im Code eintragen.";return;}const d=new FormData(e.currentTarget);const body=encodeURIComponent("Name: "+d.get("name")+"\nE-Mail: "+d.get("email")+"\nUnternehmen: "+d.get("company")+"\n\nNachricht:\n"+d.get("message"));location.href="mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("Anfrage über Digital Media Studio")+"&body="+body;});
+document.getElementById("contactForm").addEventListener("submit",e=>{e.preventDefault();if(CONTACT_EMAIL===nilsromer48@gmail.com){document.getElementById("status").textContent="Bitte zuerst deine echte Kontakt-E-Mail-Adresse im Code eintragen.";return;}const d=new FormData(e.currentTarget);const body=encodeURIComponent("Name: "+d.get("name")+"\nE-Mail: "+d.get("email")+"\nUnternehmen: "+d.get("company")+"\n\nNachricht:\n"+d.get("message"));location.href="mailto:"+CONTACT_EMAIL+"?subject="+encodeURIComponent("Anfrage über Digital Media Studio")+"&body="+body;});
 </script>
 </body></html>
